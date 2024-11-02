@@ -1,6 +1,6 @@
 import { Alertbox } from "./Alertbox";
 import styles from './Weather.module.css'
-import { Image } from "react-bootstrap";
+import { Image,Spinner } from "react-bootstrap";
 import wind from "../assets/wind.png"
 import humidity from "../assets/humidity.png"
 import Pressure from "../assets/Pressure.png"
@@ -82,7 +82,9 @@ export function Weather() {
                         </div>
                     </div>
 
-                </div>) : (<p>Loading</p>)}
+                </div>) : (<Spinner animation="border" role="status">
+                    <span className="visually-hidden">Loading...</span>
+                </Spinner>)}
         </div>
 
     );
