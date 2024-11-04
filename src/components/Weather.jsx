@@ -1,6 +1,6 @@
 import { Alertbox } from "./Alertbox";
 import styles from './Weather.module.css'
-import { Image,Spinner } from "react-bootstrap";
+import { Image, Spinner } from "react-bootstrap";
 import wind from "../assets/wind.png"
 import humidity from "../assets/humidity.png"
 import Pressure from "../assets/Pressure.png"
@@ -81,11 +81,11 @@ export function Weather() {
                             <h2>{weather1 ? weather1.current.vis_km : weather.current.vis_km}km</h2>
                         </div>
                     </div>
-                           <div className={styles.time}>
-                            
-                            <h3>Last Updated:{weather.current.last_updated}</h3>
-  
-                           </div>
+                    <div className={styles.time}>
+
+                        <h3>Last Updated:{weather.current.last_updated}</h3>
+
+                    </div>
                 </div>) : (<Spinner animation="border" role="status">
                     <span className="visually-hidden">Loading...</span>
                 </Spinner>)}
