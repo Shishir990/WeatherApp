@@ -81,7 +81,11 @@ export function Weather() {
                             <h2>{weather1 ? weather1.current.vis_km : weather.current.vis_km}km</h2>
                         </div>
                     </div>
-
+                           <div className={styles.time}>
+                            
+                            <h3>Last Updated:{weather.current.last_updated}</h3>
+  
+                           </div>
                 </div>) : (<Spinner animation="border" role="status">
                     <span className="visually-hidden">Loading...</span>
                 </Spinner>)}
