@@ -82,9 +82,7 @@ export function Weather() {
                         </div>
                     </div>
                     <div className={styles.time}>
-
                         <h3>Last Updated:{weather.current.last_updated}</h3>
-
                     </div>
                 </div>) : (<Spinner animation="border" role="status">
                     <span className="visually-hidden">Loading...</span>
