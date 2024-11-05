@@ -39,8 +39,6 @@ export function Weather() {
     return (
 
         <div className={styles.parent}>
-
-            <Alertbox></Alertbox>
             <div className={styles.SearchBox}>
                 <form onSubmit={onhandleSubmit}>
                     <input type="text" placeholder="Enter city" onKeyUp={onHandleChange}></input><br></br>
