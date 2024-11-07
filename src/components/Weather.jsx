@@ -1,4 +1,4 @@
-import { Alertbox } from "./Alertbox";
+
 import styles from './Weather.module.css'
 import { Image, Spinner } from "react-bootstrap";
 import wind from "../assets/wind.png"
@@ -42,7 +42,7 @@ export function Weather() {
             <div className={styles.SearchBox}>
                 <form onSubmit={onhandleSubmit}>
                     <input type="text" placeholder="Enter city" onKeyUp={onHandleChange}></input><br></br>
-                    <input className={styles.search} type="submit" value="Search"></input>
+                    <input className={styles.search} type="submit" value="Get Weather"></input>
                 </form>
             </div>
             {weather ? (
