@@ -13,9 +13,9 @@ function App() {
      <BrowserRouter>
      <Navigationbar></Navigationbar>
      <Routes>
-       <Route path="/" element={<Weather></Weather>}></Route>
-       <Route path="/about" element={<Alertbox></Alertbox>}></Route>
-       <Route path="/contact" element={<Contact></Contact>}></Route>
+       <Route path="/" element={<Weather/>}></Route>
+       <Route path="/about" element={<Alertbox/>}></Route>
+       <Route path="/contact" element={<Contact/>}></Route>
      </Routes>
      </BrowserRouter>
   );
